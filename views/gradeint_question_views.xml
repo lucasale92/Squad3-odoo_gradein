@@ -1,0 +1,11 @@
+<!-- TREE -->
+<record id="view_gradein_question_tree" model="ir.ui.view">
+    <field name="name">gradein.question.view.tree</field>
+    <field name="model">gradein.question</field>
+    <field name="arch" type="xml">
+        <tree>
+            <field name="name"/>
+            <field name="equipment_type_ids"/>
+        </tree>
+    </field>
+</record>
