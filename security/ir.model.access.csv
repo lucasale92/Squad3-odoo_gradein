@@ -1,0 +1,9 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_gradein_question_user","Grade_In_Question_User","model_gradein_question","group_services_users",1,0,0,0
+"access_gradein_question_admin","Grade_In_Question_Admin","model_gradein_question","group_services_manager",1,1,1,1
+
+"access_gradein_equipment_user","Grade_In_Equipment_User","model_gradein_equipment","group_services_users",1,0,0,0
+"access_gradein_equipment_admin","Grade_In_Equipment_Admin","model_gradein_equipment","group_services_manager",1,1,1,1
+
+"access_gradein_equipment_type_user","Grade_In_Equipment_Type_User","model_gradein_equipment_type","group_services_users",1,0,0,0
+"access_gradein_equipment_type_admin","Grade_In_Equipment_Type_Admin","model_gradein_equipment_type","group_services_manager",1,1,1,1
