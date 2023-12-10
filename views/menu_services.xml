@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_services" name="Service"
+        groups="group_services_user,group_services_manager"/>
+
+        <menuitem id="menu_service_config" name="Configuration" 
+        action="action_menu_services" parent="menu_services" groups="group_services_manager"/>
+
+    </data>
+</odoo>
