@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+        <!-- Vista formulario de preguntas GradeIn -->
+        <record id="view_gradein_question_form" model="ir.ui.view">
+            <field name="name">gradein.question.form</field>
+            <field name="model">gradein.question</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <!-- Campos del formulario -->
+                        <group>
+                            <field name="name"/>
+                            <field name="active"/>
+                            <field name="equipment_type_ids"/>
+                            <field name="answer_ids"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

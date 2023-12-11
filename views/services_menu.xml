@@ -1,0 +1,8 @@
+<odoo>
+    <data>
+        <!-- Menú principal en la pantalla de inicio -->
+        <menuitem id="menu_services" name="Servicios" sequence="10" />
+        <menuitem id="menu_services_inicio" name="Inicio" parent="menu_servicios" action="action_servicios_inicio" />
+        <menuitem id="menu_configuracion" name="Configuración" sequence="10" groups="group_administrador"/>
+    </data>
+</odoo>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_gradein_equipment_type_form" model="ir.ui.view">
+        <field name="name">gradein.equipment.type.form</field>
+        <field name="model">gradein.equipment.type</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="image" widget="image" options="{'editable': True}"/>
+                        <field name="active"/>
+                        <field name="question_ids" widget="many2many_tags"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

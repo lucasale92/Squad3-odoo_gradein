@@ -1,0 +1,56 @@
+<odoo>
+    <data>
+        <!-- Vista de formulario para GradeInEquipmentType -->
+        <record id="view_gradein_equipment_type_form" model="ir.ui.view">
+            <field name="name">gradein.equipment.type.form</field>
+            <field name="model">models.gradein.equipment.type</field>
+            <field name="arch" type="xml">
+                <form string="GradeIn Equipment Type">
+                    <group>
+                        <field name="name"/>
+                        <field name="image"/>
+                        <field name="active"/>
+                        <field name="question_ids" widget="many2many_tags"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- Vista de lista para GradeInEquipmentType -->
+        <record id="view_gradein_equipment_type_tree" model="ir.ui.view">
+            <field name="name">gradein.equipment.type.tree</field>
+            <field name="model">models.gradein.equipment.type</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Vista de búsqueda para GradeInEquipmentType -->
+        <record id="view_gradein_equipment_type_search" model="ir.ui.view">
+            <field name="name">gradein.equipment.type.search</field>
+            <field name="model">models.gradein.equipment.type</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" string="Nombre"/>
+                    <field name="active" string="Activo"/>
+                </search>
+            </field>
+        </record>
+
+        <!-- Acciones para los modelos -->
+        <record id="action_gradein_equipment_type" model="ir.actions.act_window">
+            <field name="name">GradeIn Equipment Types</field>
+            <field name="res_model">models.gradein.equipment.type</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_gradein_equipment_type_tree"/>
+            <field name="search_view_id" ref="view_gradein_equipment_type_search"/>
+        </record>
+
+        <!-- Menú para acceder al modelo GradeInEquipmentType -->
+        <menuitem id="menu_gradein_equipment_type" name="GradeIn Equipment Types" parent="base.menu_sales"/>
+        <menuitem id="menu_gradein_equipment_type_list" name="Equipment Types" parent="menu_gradein_equipment_type" action="action_gradein_equipment_type"/>
+    </data>
+</odoo>

@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <!-- Vista de búsqueda de preguntas GradeIn -->
+        <record id="view_gradein_question_search" model="ir.ui.view">
+            <field name="name">gradein.question.search</field>
+            <field name="model">gradein.question</field>
+            <field name="arch" type="xml">
+                <search>
+                    <!-- Filtros rápidos (buscador) -->
+                    <filter string="Nombre" name="filter_name" context="{'group_by': 'name'}"/>
+                    
+                    <!-- Filtro predefinido -->
+                    <filter string="Archivadas" name="filter_archived" domain="[('active', '=', False)]"/>
+                    
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>
