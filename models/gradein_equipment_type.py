@@ -1,15 +1,10 @@
 from odoo import models, fields
 
 class GradeInEquipmentType(models.Model):
-    _name = 'models.gradein.equipment.type'
+    _name = 'gradein.equipment.type'
 
     name = fields.Char(string='Name', required=True)
     image = fields.Binary(string='Imagen')
     active = fields.Boolean(string='Activo', default=True)
-    question_ids = fields.One2many('models.gradein.question', 'equipment_type_id', string='Preguntas')
+    question_ids = fields.One2many('gradein.question', 'answer_ids', string='Preguntas')
 
-class GradeInQuestion(models.Model):
-    _name = 'models.gradein.question'
-
-    name = fields.Char(string='Pregunta', required=True)
-    equipment_type_id = fields.Many2one('gradein.equipment.type', string='Tipo de Equipo')
