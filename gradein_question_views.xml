@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- FORM -->
+        <record id="view_gradein_question_form" model="ir.ui.view">
+            <field name="name">gradein.question.view.form</field>
+            <field name="model">gradein.question</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name"/>
+                        <field name="active"/>
+                        <field name="equipment_type_ids"/>
+                        <field name="answer_ids"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- SEARCH -->
+        <record id="view_gradein_question_search" model="ir.ui.view">
+            <field name="name">gradein.question.search</field>
+            <field name="model">gradein.question</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" string="Name" filter_domain="[('name', 'ilike', self)]"/>
+                    <filter string="Active" name="active_filter" domain="[('active', '=', True)]"/>
+                </search>
+            </field>
+        </record>
+
+        <!-- TREE -->
+        <record id="view_gradein_question_tree" model="ir.ui.view">
+            <field name="name">gradein.question.view.tree</field>
+            <field name="model">gradein.question</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="active"/>
+                    <!-- <field name="equipment_type_ids" widget="many2many_tags"/> -->
+                </tree>
+            </field>
+        </record>
+
+        
+        
+        <!-- ACTION -->
+        <record id="action_gradein_questions" model="ir.actions.act_window">
+            <field name="name">Gradein Questions</field>
+            <field name="res_model">gradein.question</field>
+            <field name="view_mode">tree,form,search</field>
+            <field name="view_id" ref="view_gradein_question_tree"/>
+        </record>
+
+        <!-- MENU ACTION -->
+        <menuitem id="menu_action_gradein_questions" name="Questions" parent="menu_gradein_questions"
+                  action="action_gradein_questions"/>
+=======
+>>>>>>> Stashed changes
+
+    </data>
+</odoo>
