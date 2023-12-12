@@ -12,7 +12,7 @@
         # 'reports/odoo_gradein_report.xml',
         'views/menu_services.xml',
         'views/gradein_answer_views.xml',
-        'views/gradein_question_views.xml',
+        #'views/gradein_question_views.xml',
     ],
     
 }
