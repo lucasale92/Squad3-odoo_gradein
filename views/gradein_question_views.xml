@@ -43,9 +43,7 @@
             </field>
         </record>
 
-        <!-- MENU -->
-        <menuitem id="menu_gradein_questions" name="Questions" parent="base.menu_service_config" sequence="20"
-                  groups="base.group_services_manager"/>
+        
         
         <!-- ACTION -->
         <record id="action_gradein_questions" model="ir.actions.act_window">
@@ -55,9 +53,11 @@
             <field name="view_id" ref="view_gradein_question_tree"/>
         </record>
 
-        MENU ACTION
+        <!-- MENU ACTION -->
         <menuitem id="menu_action_gradein_questions" name="Questions" parent="menu_gradein_questions"
                   action="action_gradein_questions"/>
+=======
+>>>>>>> Stashed changes
 
     </data>
 </odoo>
