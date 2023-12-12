@@ -6,10 +6,14 @@
     "installable": True,
     "application": True,
     "data": [
-        # 'security/ir.model.access.csv',
+        'security/res_groups.xml',
+        'security/ir.model.access.csv',
         # 'views/odoo_gradein_view.xml',
         # 'reports/odoo_gradein_report.xml',
+        'views/menu_services.xml',
         'views/gradein_answer_views.xml',
+        'views/gradein_question_views.xml',
+        'views/gradein_equipment_type_views.xml',
     ],
     
 }
