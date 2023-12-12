@@ -3,7 +3,7 @@
     <data>
 
         <!--FORM-->
-        <record id="view_gradein_equipment_form" model="ir.ui.view">
+        <record id="view_gradein_equipment_type_form" model="ir.ui.view">
             <field name="name">gradein.equipment.type.view.form</field>
             <field name="model">gradein.equipment.type</field>
             <field name="arch" type="xml">
@@ -11,7 +11,6 @@
                     <group>
                         <field name="name"/>
                         <field name="active"/>
-                        <field name="price_reduction"/>
                     </group>
                 </form>
             </field>
@@ -20,21 +19,19 @@
 
 
         <!-- TREE -->
-        <record id="view_gradein_equipment_tree" model="ir.ui.view">
+        <record id="view_gradein_equipment_type_tree" model="ir.ui.view">
             <field name="name">gradein.equipment.type.view.tree</field>
             <field name="model">gradein.equipment.type</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
-                    <field name="price_reduction"/>
                 </tree>
             </field>
         </record>
 
 
-
         <!--SEARCH-->
-        <record id="view_gradein_equipment_search" model="ir.ui.view">
+        <record id="view_gradein_equipment_type_search" model="ir.ui.view">
             <field name="name">gradein.equipment.type.view.search</field>
             <field name="model">gradein.equipment.type</field>
             <field name="arch" type="xml">
@@ -45,18 +42,16 @@
             </field>
         </record>
 
-
-
         <!-- ACTION -->
         <record id="action_gradein_equipments_type" model="ir.actions.act_window">
-            <field name="name">Library Books</field>
+            <field name="name">Equipment Type</field>
             <field name="res_model">gradein.equipment.type</field>
             <field name="view_mode">tree,form,search</field>
-            <field name="view_id" ref="view_gradein_equipment_tree"/>
+            <field name="view_id" ref="view_gradein_equipment_type_tree"/>
         </record>
 
         <menuitem id="menu_action_gradein_equipment_type" 
-            name="Equipment Tipe" 
+            name="Equipment type" 
             parent="menu_services_config"
            action="action_gradein_equipments_type"/>
 
