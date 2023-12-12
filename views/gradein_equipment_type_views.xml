@@ -2,12 +2,10 @@
 <odoo>
     <data>
 
-
-
         <!--FORM-->
-        <record id="view_gradein_answer_form" model="ir.ui.view">
-            <field name="name">gradein.answer.view.form</field>
-            <field name="model">gradein.answer</field>
+        <record id="view_gradein_equipment_form" model="ir.ui.view">
+            <field name="name">gradein.equipment.type.view.form</field>
+            <field name="model">gradein.equipment.type</field>
             <field name="arch" type="xml">
                 <form>
                     <group>
@@ -22,9 +20,9 @@
 
 
         <!-- TREE -->
-        <record id="view_gradein_answer_tree" model="ir.ui.view">
-            <field name="name">gradein.answer.view.tree</field>
-            <field name="model">gradein.answer</field>
+        <record id="view_gradein_equipment_tree" model="ir.ui.view">
+            <field name="name">gradein.equipment.type.view.tree</field>
+            <field name="model">gradein.equipment.type</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
@@ -36,9 +34,9 @@
 
 
         <!--SEARCH-->
-        <record id="view_gradein_answer_search" model="ir.ui.view">
-            <field name="name">gradein.answer.view.search</field>
-            <field name="model">gradein.answer</field>
+        <record id="view_gradein_equipment_search" model="ir.ui.view">
+            <field name="name">gradein.equipment.type.view.search</field>
+            <field name="model">gradein.equipment.type</field>
             <field name="arch" type="xml">
                 <search>
                     <field name="name" string="Nombre" filter_domain="[('name', 'ilike', self)]"/>
@@ -47,20 +45,20 @@
             </field>
         </record>
 
-        <!-- ACTION -->
-        <record id="action_gradein_answers" model="ir.actions.act_window">
-            <field name="name">Answer</field>
-            <field name="res_model">gradein.answer</field>
-            <field name="view_mode">tree,form,search</field>
-            <field name="view_id" ref="view_gradein_answer_tree"/>
-        </record>
-        
-        <!-- MENU ACTION -->
-        <menuitem id="menu_action_gradein_answers" 
-            name="Answer" 
-            parent="menu_services_config"
-           action="action_gradein_answers"/>
 
-        
+
+        <!-- ACTION -->
+        <record id="action_gradein_equipments_type" model="ir.actions.act_window">
+            <field name="name">Library Books</field>
+            <field name="res_model">gradein.equipment.type</field>
+            <field name="view_mode">tree,form,search</field>
+            <field name="view_id" ref="view_gradein_equipment_tree"/>
+        </record>
+
+        <menuitem id="menu_action_gradein_equipment_type" 
+            name="Equipment Tipe" 
+            parent="menu_services_config"
+           action="action_gradein_equipments_type"/>
+
     </data>
 </odoo>

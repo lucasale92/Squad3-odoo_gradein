@@ -12,4 +12,4 @@ class GradeInQuestion(models.Model):
     _name = 'models.gradein.question'
 
     name = fields.Char(string='Pregunta', required=True)
-    equipment_type_id = fields.Many2one('tu_modulo.gradein.equipment.type', string='Tipo de Equipo')
+    equipment_type_id = fields.Many2one('gradein.equipment.type', string='Tipo de Equipo')
