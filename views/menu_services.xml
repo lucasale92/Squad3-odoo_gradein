@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <!-- <menuitem id="menu_services" name="Service"
-        groups="group_services_user,group_services_manager"/>
+        <!-- TREE -->
+        <record id="view_gradein_question_tree" model="ir.ui.view">
+            <field name="name">Gradein Question</field>
+            <field name="model">gradein.question</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" />
+                    <field name="active" />
+                </tree>
+            </field>
+        </record>
 
-<<<<<<< Updated upstream
-        <menuitem id="menu_service_config" name="Configuration" 
-        action="action_menu_services" parent="menu_services" groups="group_services_manager"/> -->
-=======
         <!-- ACTION -->
         <record id="action_menu_services" model="ir.actions.act_window">
             <field name="name">Menu Services</field>
@@ -19,20 +24,10 @@
         <!-- Menú de Servicios -->
         <menuitem id="menu_services"
             name="Services"
-        />
+            action="action_menu_services" />
 
-        <menuitem id="menu_services_config"
-            name="Configuration"
-            parent="menu_services"
-             
-           groups="group_services_manager"/>
-        
-        <menuitem id="menu_action_gradein_questions" 
-            name="Questions" 
-            parent="menu_services_config"
-           action="action_menu_services"/>
-           
->>>>>>> Stashed changes
+        <menuitem id="menu_service_config" name="Configuration" 
+        action="action_menu_services" parent="menu_services" groups="group_services_manager"/> -->
 
     </data>
 </odoo>

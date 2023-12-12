@@ -52,12 +52,7 @@
             <field name="view_mode">tree,form,search</field>
             <field name="view_id" ref="view_gradein_question_tree"/>
         </record>
-<!-- MENU -->
-        <!-- <menuitem id="menu_gradein_questions" name="Questions" parent="base.menu_service_config" sequence="20"
-                  groups="base.group_services_manager"/> -->
-        
 
-<<<<<<< Updated upstream
         <!-- MENU ACTION -->
         <menuitem id="menu_action_gradein_questions" name="Questions" parent="menu_gradein_questions"
                   action="action_gradein_questions"/>
@@ -66,4 +61,3 @@
 
     </data>
 </odoo>
-
