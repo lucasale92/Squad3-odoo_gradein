@@ -56,5 +56,7 @@
             <field name="view_mode">tree,form,search</field>
             <field name="view_id" ref="view_gradein_answer_tree"/>
         </record>
+
+        
     </data>
 </odoo>
