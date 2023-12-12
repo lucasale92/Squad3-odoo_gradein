@@ -7,5 +7,18 @@
         <menuitem id="menu_service_config" name="Configuration" 
         action="action_menu_services" parent="menu_services" groups="group_services_manager"/> -->
 
+<<<<<<< Updated upstream
+=======
+        <!-- Menú de Servicios -->
+        <menuitem id="menu_services"
+            name="Services"
+            action="action_menu_services" />
+
+        <menuitem id="menu_services_config"
+            name="Configuration"
+            parent="menu_services"
+            action="action_menu_services"
+            groups="group_services_manager"/>
+>>>>>>> Stashed changes
     </data>
 </odoo>
