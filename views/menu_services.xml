@@ -29,6 +29,6 @@
         <menuitem id="menu_services_config"
             name="Configuration"
             parent="menu_services"
-            groups="group_services_manager" />
+            groups="group_services_manager"/>
     </data>
 </odoo>
