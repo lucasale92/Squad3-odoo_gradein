@@ -47,8 +47,6 @@
             </field>
         </record>
 
-
-
         <!-- ACTION -->
         <record id="action_gradein_answers" model="ir.actions.act_window">
             <field name="name">Library Books</field>
