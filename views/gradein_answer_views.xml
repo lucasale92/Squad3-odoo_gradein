@@ -51,7 +51,7 @@
 
         <!-- ACTION -->
         <record id="action_gradein_answers" model="ir.actions.act_window">
-            <field name="name">Library Books</field>
+            <field name="name">Answer</field>
             <field name="res_model">gradein.answer</field>
             <field name="view_mode">tree,form,search</field>
             <field name="view_id" ref="view_gradein_answer_tree"/>

@@ -53,11 +53,8 @@
             <field name="view_id" ref="view_gradein_question_tree"/>
         </record>
 
-        <!-- MENU ACTION -->
-        <menuitem id="menu_action_gradein_questions" name="Questions" parent="menu_gradein_questions"
-                  action="action_gradein_questions"/>
-=======
->>>>>>> Stashed changes
+        
+
 
     </data>
 </odoo>
