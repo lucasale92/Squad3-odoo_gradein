@@ -36,7 +36,7 @@
             <field name="model">gradein.equipment.type</field>
             <field name="arch" type="xml">
                 <search>
-                    <field name="name" string="Nombre" filter_domain="[('name', 'ilike', self)]"/>
+                    <field name="name"  filter_domain="[('name', 'ilike', self)]"/>
                     <filter string="Archivadas" name="active_filter" domain="[('active', '=', False)]"/>
                 </search>
             </field>
