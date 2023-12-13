@@ -14,6 +14,7 @@
         'views/gradein_answer_views.xml',
         'views/gradein_question_views.xml',
         'views/gradein_equipment_type_views.xml',
+        'views/gradein_equipment_views.xml',
     ],
     
 }
