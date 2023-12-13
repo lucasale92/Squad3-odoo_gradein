@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--FORM-->
+        <record id="view_gradein_reject_motive_form" model="ir.ui.view">
+            <field name="name">gradein.reject.motive.view.form</field>
+            <field name="model">gradein.reject.motive</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name"/>
+                        <field name="active"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- TREE -->
+        <record id="view_gradein_reject_motive_tree" model="ir.ui.view">
+            <field name="name">gradein.reject.motive.view.tree</field>
+            <field name="model">gradein.reject.motive</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+
+
+        <!--SEARCH-->
+        <record id="view_gradein_answer_search" model="ir.ui.view">
+            <field name="name">gradein.answer.view.search</field>
+            <field name="model">gradein.answer</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" string="Nombre" filter_domain="[('name', 'ilike', self)]"/>
+                    <filter string="Archivadas" name="active_filter" domain="[('active', '=', False)]"/>
+                </search>
+            </field>
+        </record>
+
+        <!-- ACTION -->
+        <record id="action_gradein_reject_motive" model="ir.actions.act_window">
+            <field name="name">Rejection</field>
+            <field name="res_model">gradein.reject.motive</field>
+            <field name="view_mode">tree,form,search</field>
+            <field name="view_id" ref="view_gradein_reject_motive_tree"/>
+        </record>
+        
+        <!-- MENU ACTION -->
+        <menuitem id="menu_action_gradein_reject_motive" 
+            name="Reject Motive" 
+            parent="menu_services_config"
+           action="action_gradein_reject_motive"/>
+
+        
+    </data>
+</odoo>

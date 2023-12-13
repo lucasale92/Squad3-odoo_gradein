@@ -10,3 +10,6 @@
 
 "access_answer_user","Grade_In_Answer_User","model_gradein_answer","group_services_seller",1,0,0,0
 "access_answer_admin","Grade_In_Answer_Admin","model_gradein_answer","group_services_manager",1,1,1,1
+
+"access_reject_motive_user","Grade_In_Reject_Motive_User","model_gradein_reject_motive","group_services_seller",1,0,0,0
+"access_reject_motive_admin","Grade_In_Reject_Motive_Admin","model_gradein_reject_motive","group_services_manager",1,1,1,1
