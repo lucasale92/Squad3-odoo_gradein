@@ -15,7 +15,7 @@
 
   
 
-        <!-- ACTION -->git 
+        <!-- ACTION -->
         <record id="action_gradein_equipment" model="ir.actions.act_window">
             <field name="name">Equipment Type</field>
             <field name="res_model">gradein.equipment</field>
