@@ -11,12 +11,12 @@
                     <group>
                         <field name="name"/>
                         <field name="active"/>
+                        <field name="image"/>
+                        <field name="question_ids"/>
                     </group>
                 </form>
             </field>
         </record>
-
-
 
         <!-- TREE -->
         <record id="view_gradein_equipment_type_tree" model="ir.ui.view">

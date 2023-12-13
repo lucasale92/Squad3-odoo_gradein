@@ -6,5 +6,5 @@ class GradeInEquipmentType(models.Model):
     name = fields.Char(string='Name', required=True)
     image = fields.Binary(string='Imagen')
     active = fields.Boolean(string='Activo', default=True)
-    question_ids = fields.One2many('gradein.question', 'answer_ids', string='Preguntas')
+    question_ids = fields.Many2many('gradein.question', string='Preguntas')
 
