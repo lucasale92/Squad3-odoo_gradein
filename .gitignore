@@ -60,3 +60,4 @@ docs/_build/
 *~
 *.swp
 *.swo
+*.pyc
