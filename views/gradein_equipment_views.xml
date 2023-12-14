@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-
         <!-- FORM -->
         <record id="view_gradein_equipment_form" model="ir.ui.view">
             <field name="name">gradein.equipment.view.form</field>
@@ -19,6 +18,19 @@
             </field>
         </record>    
 
+    <!-- SEARCH -->
+        <record id="view_gradein_equipment_search" model="ir.ui.view">
+            <field name="name">gradein.equipment.search</field>
+            <field name="model">gradein.equipment</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" filter_domain="[('name', 'ilike', self)]"/>
+                    <field name="description" filter_domain="[('name', 'ilike', self)]"/>
+                    <filter string="Archivadas" name="active_filter" domain="[('active', '=', True)]" context="{'group_by': 'active'}"/>
+                </search>
+            </field>
+        </record>
+
      <!-- TREE -->
         <record id="view_gradein_equipment_tree" model="ir.ui.view">
             <field name="name">gradein.equipment.view.tree</field>
@@ -28,12 +40,9 @@
                     <field name="name"/>
                     <field name="description"/>
                     <field name="price"/>
-
                 </tree>
             </field>
         </record>
-
-  
 
         <!-- ACTION -->
         <record id="action_gradein_equipment" model="ir.actions.act_window">
@@ -41,10 +50,7 @@
             <field name="res_model">gradein.equipment</field>
             <field name="view_mode">tree,form,search</field>
             <field name="view_id" ref="view_gradein_equipment_tree"/>
-        </record>
-
-    
-       
+        </record>       
     
     <!-- Menu de equipo -->
         <menuitem id="menu_action_gradein_equipment" 
