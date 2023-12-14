@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Form View -->
+        <record id="view_gradein_order_form" model="ir.ui.view">
+            <field name="name">gradein.order.form</field>
+            <field name="model">gradein.order</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name" string="Name"/>
+                            <field name="date" string="Date"/>
+                            <field name="state" string="State"/>
+                            <field name="equipment_id" string="Equipment"/>
+                            <field name="imei" string="IMEI"/>
+                            <field name="image_ids" string="Images"/>
+                            <field name="partner_id" string="Client"/>
+                            <field name="reject_motive_id" string="Reject Motive"/>
+                            <field name="price" string="Amount to Pay"/>
+                            <field name="review" string="Review Summary"/>
+                            <field name="answer_ids" string="Answers"/>
+                            <field name="question_id" string="Question"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- Árbol (Tree view) -->
+        <record id="view_gradein_order_tree" model="ir.ui.view">
+            <field name="name">gradein.order.tree</field>
+            <field name="model">gradein.order</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" string="Nombre"/>
+                    <field name="date" string="Fecha"/>
+                    <field name="state" string="Estado"/>
+                    <field name="equipment_id" string="Equipo"/>
+                    <field name="imei" string="IMEI"/>
+                    <field name="partner_id" string="Cliente"/>
+                    <field name="reject_motive_id" string="Motivo de rechazo"/>
+                    <field name="price" string="Importe a pagar"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!-- Search View -->
+        <record id="view_gradein_order_search" model="ir.ui.view">
+            <field name="name">gradein.order.search</field>
+            <field name="model">gradein.order</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" string="Name"/>
+                    <field name="date" string="Date"/>
+                    <field name="imei" string="IMEI"/>
+                    <field name="equipment_id" string="Equipment"/>
+                    <field name="reject_motive_id" string="Reject Motive"/>
+                    <filter name="state_draft" string="Draft" domain="[('state', '=', 'draft')]"/>
+                </search>
+            </field>
+        </record>
+
+
+
+        <!-- Acción (Action) -->
+        <record id="action_gradein_order" model="ir.actions.act_window">
+            <field name="name">Order GradeIn</field>
+            <field name="res_model">gradein.order</field>
+            <field name="view_mode">tree,form,search</field>
+            <field name="view_id" ref="view_gradein_order_tree"/>
+        </record>
+
+        <!-- Elemento de menú (Menu item) -->
+        <menuitem id="menu_action_gradein_order"
+                  name="Order GradeIn"
+                  parent="menu_services_config"
+                  action="action_gradein_order"/>
+
+    </data>
+</odoo>

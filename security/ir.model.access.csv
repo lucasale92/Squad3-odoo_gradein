@@ -13,3 +13,6 @@
 
 "access_reject_motive_user","Grade_In_Reject_Motive_User","model_gradein_reject_motive","group_services_seller",1,0,0,0
 "access_reject_motive_admin","Grade_In_Reject_Motive_Admin","model_gradein_reject_motive","group_services_manager",1,1,1,1
+
+"access_gradein_order_user","Grade_In_Order_User","model_gradein_order","group_services_seller",1,0,0,0
+"access_gradein_order_admin","Grade_In_Order_Admin","model_gradein_order","group_services_manager",1,1,1,1
