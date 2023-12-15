@@ -61,3 +61,6 @@ docs/_build/
 *.swp
 *.swo
 *.pyc
+*.pyc
+*.pyc
+models/__pycache__/__init__.cpython-37.pyc
