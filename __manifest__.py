@@ -17,6 +17,7 @@
         'views/gradein_order_views.xml',
         'reports/gradein_reports.xml',        
     ],
+    # image
         'images': [
         'static/description/phone.png',
     ],
