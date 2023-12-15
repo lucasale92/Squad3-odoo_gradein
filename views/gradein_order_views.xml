@@ -77,7 +77,7 @@
         <!-- Elemento de menú (Menu item) -->
         <menuitem id="menu_action_gradein_order"
                   name="Order GradeIn"
-                  parent="menu_services_config"
+                  parent="menu_services"
                   action="action_gradein_order"/>
 
     </data>
