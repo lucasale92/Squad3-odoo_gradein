@@ -17,5 +17,7 @@
         'views/gradein_order_views.xml',
         'reports/gradein_reports.xml',        
     ],
-    
+        'images': [
+        'static/description/icon.png',
+    ],
 }
