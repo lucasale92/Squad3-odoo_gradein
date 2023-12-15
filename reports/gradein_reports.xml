@@ -1,0 +1,58 @@
+<odoo>
+    <template id="gradein_order_report">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <h2>Gradein Order Report</h2>
+                    <t t-foreach="docs" t-as="o">
+                        <div>
+                            <span t-field="o.name"/> 
+                            <!-- <span t-field="o.order_gradein"/> -->
+                        </div>
+                        <br/>
+
+                        <table class="table table-sm o_main_table">
+                            <thead style="display: table-row-group">
+                                <tr>
+                                    <th class="text-left">Name</th>
+                                    <th class="text-left">Date</th>
+                                    <th class="text-left">Equipment id</th>
+                                    <th class="text-left">Imei</th>
+                                    <th class="text-left">Image</th>
+                                    <th class="text-left">Partnet id</th>
+                                    <th class="text-left">Reject motive</th>
+                                    <th class="text-left">Price</th>
+                                    <th class="text-left">Review</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-left"><t t-esc="o.name"/></td>
+                                    <td class="text-left"><t t-esc="o.date"/></td>
+                                    <td class="text-left"><t t-esc="o.equipment_id"/></td>
+                                    <td class="text-left"><t t-esc="o.imei"/></td>
+                                    <td class="text-left"><t t-esc="o.image_ids"/></td>
+                                    <td class="text-left"><t t-esc="o.partner_id"/></td>
+                                    <td class="text-left"><t t-esc="o.reject_motive_id"/></td>
+                                    <td class="text-left"><t t-esc="o.price"/></td>
+                                    <td class="text-left"><t t-esc="o.review"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </t>
+                </div>
+            </t>
+        </t>
+    </template>
+
+    <record id="action_gradein_order_report" model="ir.actions.report">
+        <field name="name">Gradein Order</field>
+        <field name="model">gradein.order</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">Squad3-odoo_gradein.gradein_order_report</field>
+        <field name="binding_model_id" ref="model_gradein_order" />
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>
