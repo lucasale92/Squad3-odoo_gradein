@@ -8,8 +8,6 @@
     "data": [
         'security/res_groups.xml',
         'security/ir.model.access.csv',
-        # 'views/odoo_gradein_view.xml',
-        # 'reports/odoo_gradein_report.xml'
         'views/menu_services.xml',
         'views/gradein_rejection_motive.xml',
         'views/gradein_answer_views.xml',
@@ -17,8 +15,7 @@
         'views/gradein_equipment_type_views.xml',
         'views/gradein_equipment_views.xml',
         'views/gradein_order_views.xml',
-
-        
+        'reports/gradein_reports.xml',        
     ],
     
 }
