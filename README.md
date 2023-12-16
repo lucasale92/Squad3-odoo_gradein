@@ -110,7 +110,7 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 
 <h3>II. Reporte</h3>
 
-**Modelo Abstracto GradeinReport (gradein_reports.py):**
+**Modelo Abstracto GradeinReport (gradein_reports.py)**
 + Propósito: Diseñado para la generación de informes relacionados con órdenes.
 + Funcionalidad Clave: Método _get_report_values: Recopila datos necesarios para la generación del informe.
 
@@ -129,7 +129,7 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 
 <h3>IV. Vistas</h3>
 
-** Vista de Respuestas (view_gradein_answer_form):**
+**Vista de Respuestas (view_gradein_answer_form):**
 
 - <u> Formulario (view_gradein_answer_form)</u>: Define la estructura del formulario para el modelo gradein.answer. Incluye campos como name, active, y price_reduction en un grupo.
 
@@ -145,6 +145,7 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 	- Accesible a través del elemento de menú "Answer".
 
 **Vista de Tipo de Equipo (view_gradein_equipment_type_form):**
+
 - <u>Formulario (view_gradein_equipment_type_form)</u>: Define la estructura del formulario para el modelo gradein.equipment.type.
 	- Incluye campos como name, active, image, y question_ids en un grupo.
  
@@ -249,37 +250,37 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 
 
 <h2>6. Estructura del Proyecto</h2>
-Squad3-odoo_gradein/
-├── models/
-│   ├── _init_.py
-│   ├── gradein_answer.py
-│   ├── gradein_equipment.py
-│   ├── gradein_equipment_type.py
-│   ├── gradein_order.py
-│   ├── gradein_question.py
-│   ├── gradein_reject_motive.py
-│   └── menu.py
-├── reports/
-│   ├── _init_.py
-│   ├── gradein_reports.py
-│   └── gradein_reports.xml
-├── security/
-│   ├── ir.model.access.csv
-│   └── res_groups.xml
-├── static/
-│   └── description/
-│       └── icon.png
-├── views/
-│   ├── gradein_answer_views.xml
-│   ├── gradein_equipment_type_views.xml
-│   ├── gradein_equipment_views.xml
-│   ├── gradein_order_views.xml
-│   ├── gradein_question_views.xml
-│   └── gradein_rejection_motive.xml
-│       └── menu_services.xml
-├── .gitignore
-├── README.md
-├── Readm2.jpg
-├── _init_.py
+Squad3-odoo_gradein/</br>
+├── models/</br>
+│   ├── _init_.py</br>
+│   ├── gradein_answer.py</br>
+│   ├── gradein_equipment.py</br>
+│   ├── gradein_equipment_type.py</br>
+│   ├── gradein_order.py</br>
+│   ├── gradein_question.py</br>
+│   ├── gradein_reject_motive.py</br>
+│   └── menu.py</br>
+├── reports/</br>
+│   ├── _init_.py</br>
+│   ├── gradein_reports.py</br>
+│   └── gradein_reports.xml</br>
+├── security/</br>
+│   ├── ir.model.access.csv</br>
+│   └── res_groups.xml</br>
+├── static/</br>
+│   └── description/</br>
+│       └── icon.png</br>
+├── views/</br>
+│   ├── gradein_answer_views.xml</br>
+│   ├── gradein_equipment_type_views.xml</br>
+│   ├── gradein_equipment_views.xml</br>
+│   ├── gradein_order_views.xml</br>
+│   ├── gradein_question_views.xml</br>
+│   └── gradein_rejection_motive.xml</br>
+│       └── menu_services.xml</br>
+├── .gitignore</br>
+├── README.md</br>
+├── Readm2.jpg</br>
+├── _init_.py</br>
 └── _manifest_.py
 
