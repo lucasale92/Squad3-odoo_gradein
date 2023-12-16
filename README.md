@@ -1,9 +1,9 @@
-[![](https://github.com/lucasale92/Squad3-odoo_gradein/blob/main/Readm2.jpg?raw=true)](https://github.com/lucasale92/Squad3-odoo_gradein/blob/main/Readm2.jpg?raw=true)### Menu Services
+[![](https://github.com/lucasale92/Squad3-odoo_gradein/blob/main/Readm2.jpg?raw=true)](https://github.com/lucasale92/Squad3-odoo_gradein/blob/main/Readm2.jpg?raw=true)
 
 
 ## 1. Introducción
 
-Menu Services es un proyecto es desarrollar una interfaz para poder facilitar a los usuarios una estrategia de "canje”, donde los mismos puedan entregar equipos usados (móviles u otros), como parte de pago en la adquisición de nuevos productos, en tiendas físicas.
+En este proyecto se desarrolla una interfaz "Menu services" para poder facilitar a los usuarios una estrategia de "canje”, donde los mismos puedan entregar equipos usados (móviles u otros), como parte de pago en la adquisición de nuevos productos, en tiendas físicas.
 
 **Table of Contents**
 
@@ -13,7 +13,7 @@ Menu Services es un proyecto es desarrollar una interfaz para poder facilitar a 
 
 ##2. Objetivo 🎯
 
-Se creerá un módulo en Odoo que permita configurar la condición de GradeIn (determinación del precio del equipo usado en base a la condición en la que se encuentra) en el sistema central, habilitando así a todas las tiendas físicas de la empresa su uso y puesta en marcha.
+Creación de módulos en Odoo que permita configurar la condición de GradeIn (determinación del precio del equipo usado en base a la condición en la que se encuentra) en el sistema central, habilitando así a todas las tiendas físicas de la empresa su uso y puesta en marcha.
 
 
 ## 3. Software 💻
