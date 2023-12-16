@@ -129,6 +129,7 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 
 <h3>IV. Vistas</h3>
 </br>
+
 **Vista de Respuestas (view_gradein_answer_form)**
 
 - <u> Formulario (view_gradein_answer_form)</u>: Define la estructura del formulario para el modelo gradein.answer. Incluye campos como name, active, y price_reduction en un grupo.
@@ -144,6 +145,7 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 	- Utiliza la vista de árbol (view_gradein_answer_tree) como vista predeterminada.
 	- Accesible a través del elemento de menú "Answer".
 </br>
+
 **Vista de Tipo de Equipo (view_gradein_equipment_type_form)**
 
 - <u>Formulario (view_gradein_equipment_type_form)</u>: Define la estructura del formulario para el modelo gradein.equipment.type.
@@ -161,6 +163,7 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 -	Utiliza la vista de árbol (view_gradein_equipment_type_tree) como vista predeterminada.
 -	Accesible a través del elemento de menú "Equipment Type" en el menú de configuración.
 </br>
+
 **Vista de Equipo (view_gradein_equipment_form)**
 
 - <u>Formulario (view_gradein_equipment_form)</u>:Define la estructura del formulario para el modelo gradein.equipment.
@@ -179,7 +182,8 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 	- Accesible a través del elemento de menú "Equipment" en el menú de servicios.
 
 </br>
-**Vista de Orden GradeIn (view_gradein_order_form)**
+    
+   **Vista de Orden GradeIn: (view_gradein_order_form)**
 
 - <u>Formulario (view_gradein_order_form)</u>: Define la estructura del formulario para el modelo gradein.order.
 	- Incluye campos como name, date, state, equipment_id, imei, image_ids, partner_id, reject_motive_id, price, review, answer_ids, y question_id en un grupo.
@@ -196,6 +200,7 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 	- Utiliza la vista de árbol (view_gradein_order_tree) como vista predeterminada.
 	- Accesible a través del elemento de menú "Order GradeIn" en el menú de servicios.
 </br>
+
 **Vista de Preguntas (view_gradein_question_form)**
 
 - <u>Formulario (view_gradein_question_form)</u>:Define la estructura del formulario para el modelo gradein.question.
@@ -213,6 +218,7 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 	- Utiliza la vista de árbol (view_gradein_question_tree) como vista predeterminada.
 	 - Accesible a través del elemento de menú "Questions" en el menú de servicios.
 </br>
+
 **Vista de Motivo de Rechazo (view_gradein_reject_motive_form)**
 - <u>Formulario (view_gradein_reject_motive_form)</u>: Define la estructura del formulario para el modelo gradein.reject.motive.
 	- Incluye campos como name y active en un grupo.
@@ -240,12 +246,12 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 A continuación, se explica la funcionalidad de cada campo: </br>
 	- name: Nombre del módulo. Identifica el módulo de manera única en el sistema
 	- version: Versión del módulo. Indica la versión actual del módulo.
-	- author: Autor o autores del módulo. Proporciona información sobre quién desarrolló el módulo.
-	- depends: Dependencias del módulo. Especifica otros módulos de Odoo que deben estar instalados para que este módulo funcione correctamente.
-	- installable: Indica si el módulo se puede instalar. Determina si el módulo es instalable desde la interfaz de administración.
-	- application: Indica si el módulo es una aplicación. Si es True, indica que el módulo es una aplicación funcional en lugar de una biblioteca o un tema.
-	- data: Lista de archivos XML y archivos de datos para cargar. Especifica los archivos XML y de datos que Odoo debe cargar durante la instalación.
-	- images: Lista de imágenes relacionadas con el módulo. Incluye imágenes que se mostrarán en la interfaz de Odoo, por ejemplo, el icono del módulo.
+    - author: Autor o autores del módulo. Proporciona información sobre quién desarrolló el módulo.
+    - depends: Dependencias del módulo. Especifica otros módulos de Odoo que deben estar instalados para que este módulo funcione correctamente.
+    - installable: Indica si el módulo se puede instalar. Determina si el módulo es instalable desde la interfaz de administración.
+    - application: Indica si el módulo es una aplicación. Si es True, indica que el módulo es una aplicación funcional en lugar de una biblioteca o un tema.
+    - data: Lista de archivos XML y archivos de datos para cargar. Especifica los archivos XML y de datos que Odoo debe cargar durante la instalación.
+    - images: Lista de imágenes relacionadas con el módulo. Incluye imágenes que se mostrarán en la interfaz de Odoo, por ejemplo, el icono del módulo.
 </br>
 <h3> VI. GIT IGNORE</h3>
 **.gitignore** es un archivo de configuración utilizado por el sistema de control de versiones Git. Su propósito principal es indicar a Git qué archivos o directorios debe ignorar y no incluir en el seguimiento o control de versiones
