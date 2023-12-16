@@ -1,30 +1,26 @@
 [![](https://github.com/lucasale92/Squad3-odoo_gradein/blob/main/Readm2.jpg?raw=true)](https://github.com/lucasale92/Squad3-odoo_gradein/blob/main/Readm2.jpg?raw=true)
 
-
-## 1. Introducción
+<h1> Proyecto Squad3-odoo-gradein</h1>
+<h2>1. Introducción</h2>
 
 En este proyecto se desarrolla una interfaz "Menu services" para poder facilitar a los usuarios una estrategia de "canje”, donde los mismos puedan entregar equipos usados (móviles u otros), como parte de pago en la adquisición de nuevos productos, en tiendas físicas.
 
-**Table of Contents**
 
-[TOCM]
-
-[TOC]
-
-##2. Objetivo 🎯
+<h2>2. Objetivo </h2>🎯
 
 Creación de módulos en Odoo que permita configurar la condición de GradeIn (determinación del precio del equipo usado en base a la condición en la que se encuentra) en el sistema central, habilitando así a todas las tiendas físicas de la empresa su uso y puesta en marcha.
 
 
-## 3. Software 💻
-✔ IDE (VSCode o Pycharm).
-✔ Instalación de ultima version de Python disponible.
-✔ Instalación de ultima version de Git disponible.
-✔ Docker desktop, para creacion de contenedores.
-✔ Jira.
+<h2>3. Software</h2> 💻
+
+✔ IDE (VSCode o Pycharm).</br>
+✔ Instalación de ultima version de Python disponible.</br>
+✔ Instalación de ultima version de Git disponible.</br>
+✔ Docker desktop, para creacion de contenedores.</br>
+✔ Jira.</br>
 ✔ Utilización del ORM de Odoo.
 
-##4. Instalación
+<h2>4. Instalación</h2>
 
 1. Realizar instalacion del Docker Desktop
 	https://www.docker.com/get-started/
@@ -46,9 +42,9 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 	+ Seller: el vendedor solo tiene acceso al Gradein Order
 ![](https://github.com/lucasale92/Squad3-odoo_gradein/blob/main/Interfaz_seller.jpg?raw=true)
 
-## 5. Descripción del proyecto
+<h2>5. Descripción del proyecto</h2>
 
-###I. Modelos
+<h3>I. Modelos</h3>
 
 **_init_.py **: organiza, importa y facilita el acceso a los módulos en el paquete gradein de la aplicación.
 
@@ -112,7 +108,7 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 	+ name: Nombre del motivo de rechazo.
 	+ active: Indica si el motivo de rechazo está activo.
 
-### II. Reporte
+<h3>II. Reporte</h3>
 
 **Modelo Abstracto GradeinReport (gradein_reports.py):**
 + Propósito: Diseñado para la generación de informes relacionados con órdenes.
@@ -131,7 +127,7 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 - Ubicación: static/description/icon.png
 - Propósito: Representa el ícono asociado con la descripción del módulo, en este caso una mano con un celular.
 
-###IV. Vistas
+<h3>IV. Vistas</h3>
 
 ** Vista de Respuestas (view_gradein_answer_form):**
 
@@ -231,7 +227,7 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 	- Utiliza la vista de árbol (view_gradein_reject_motive_tree) como vista predeterminada.
 	 -Accesible a través del elemento de menú "Reject Motive" en el menú de configuración.
 
-###V. Archivos de configuracion: _init_.py y manifest.py
+<h3>V. Archivos de configuracion: _init_.py y manifest.py</h3>
 
 **_init_.py** importa tres partes fundamentales del mismo paquete:
 	- models: Define modelos de datos.
@@ -248,11 +244,11 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 	- data: Lista de archivos XML y archivos de datos para cargar. Especifica los archivos XML y de datos que Odoo debe cargar durante la instalación.
 	- images: Lista de imágenes relacionadas con el módulo. Incluye imágenes que se mostrarán en la interfaz de Odoo, por ejemplo, el icono del módulo.
 
-### VI. GIT IGNORE
+<h3> VI. GIT IGNORE</h3>
 **.gitignore** es un archivo de configuración utilizado por el sistema de control de versiones Git. Su propósito principal es indicar a Git qué archivos o directorios debe ignorar y no incluir en el seguimiento o control de versiones
 
 
-## 6. Estructura del Proyecto
+<h2>6. Estructura del Proyecto</h2>
 Squad3-odoo_gradein/
 ├── models/
 │   ├── _init_.py
