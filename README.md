@@ -129,7 +129,7 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 
 <h3>IV. Vistas</h3>
 </br>
-**Vista de Respuestas (view_gradein_answer_form):**
+**Vista de Respuestas (view_gradein_answer_form)**
 
 - <u> Formulario (view_gradein_answer_form)</u>: Define la estructura del formulario para el modelo gradein.answer. Incluye campos como name, active, y price_reduction en un grupo.
 
@@ -139,12 +139,12 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 	- Un campo para filtrar por name.
 	- Incluye un filtro para elementos no activos (active_filter).
 
-- <u>Acción de Ventana (action_gradein_answers)</u>u>: Define una acción de ventana para el modelo gradein.answer. 
+- <u>Acción de Ventana (action_gradein_answers)</u>: Define una acción de ventana para el modelo gradein.answer. 
 	- Especifica las vistas que deben mostrarse: tree, form, y search.
 	- Utiliza la vista de árbol (view_gradein_answer_tree) como vista predeterminada.
 	- Accesible a través del elemento de menú "Answer".
 </br>
-**Vista de Tipo de Equipo (view_gradein_equipment_type_form):**
+**Vista de Tipo de Equipo (view_gradein_equipment_type_form)**
 
 - <u>Formulario (view_gradein_equipment_type_form)</u>: Define la estructura del formulario para el modelo gradein.equipment.type.
 	- Incluye campos como name, active, image, y question_ids en un grupo.
@@ -161,7 +161,7 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 -	Utiliza la vista de árbol (view_gradein_equipment_type_tree) como vista predeterminada.
 -	Accesible a través del elemento de menú "Equipment Type" en el menú de configuración.
 </br>
-**Vista de Equipo (view_gradein_equipment_form):**
+**Vista de Equipo (view_gradein_equipment_form)**
 
 - <u>Formulario (view_gradein_equipment_form)</u>:Define la estructura del formulario para el modelo gradein.equipment.
 	-Incluye campos como name, image, description, active, y price en un grupo.
@@ -179,7 +179,8 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 	- Accesible a través del elemento de menú "Equipment" en el menú de servicios.
 
 </br>
-**Vista de Orden GradeIn (view_gradein_order_form):**
+**Vista de Orden GradeIn (view_gradein_order_form)**
+
 - <u>Formulario (view_gradein_order_form)</u>: Define la estructura del formulario para el modelo gradein.order.
 	- Incluye campos como name, date, state, equipment_id, imei, image_ids, partner_id, reject_motive_id, price, review, answer_ids, y question_id en un grupo.
 
@@ -195,7 +196,7 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 	- Utiliza la vista de árbol (view_gradein_order_tree) como vista predeterminada.
 	- Accesible a través del elemento de menú "Order GradeIn" en el menú de servicios.
 </br>
-**Vista de Preguntas (view_gradein_question_form):**
+**Vista de Preguntas (view_gradein_question_form)**
 
 - <u>Formulario (view_gradein_question_form)</u>:Define la estructura del formulario para el modelo gradein.question.
 	- Incluye campos como name, active, equipment_type_ids, y answer_ids en un grupo.
@@ -212,7 +213,7 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 	- Utiliza la vista de árbol (view_gradein_question_tree) como vista predeterminada.
 	 - Accesible a través del elemento de menú "Questions" en el menú de servicios.
 </br>
-**Vista de Motivo de Rechazo (view_gradein_reject_motive_form):**
+**Vista de Motivo de Rechazo (view_gradein_reject_motive_form)**
 - <u>Formulario (view_gradein_reject_motive_form)</u>: Define la estructura del formulario para el modelo gradein.reject.motive.
 	- Incluye campos como name y active en un grupo.
 
@@ -236,7 +237,7 @@ Creación de módulos en Odoo que permita configurar la condición de GradeIn (d
 	- static: Contiene archivos estáticos como imágenes y scripts.
 
 **manifest.py**: es un archivo de descripción del módulo (addon) . 
-A continuación, se explica la funcionalidad de cada campo:
+A continuación, se explica la funcionalidad de cada campo: </br>
 	- name: Nombre del módulo. Identifica el módulo de manera única en el sistema
 	- version: Versión del módulo. Indica la versión actual del módulo.
 	- author: Autor o autores del módulo. Proporciona información sobre quién desarrolló el módulo.
