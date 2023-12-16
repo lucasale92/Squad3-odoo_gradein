@@ -19,6 +19,7 @@
         </record>
 
         <!-- TREE -->
+        
         <record id="view_gradein_equipment_type_tree" model="ir.ui.view">
             <field name="name">gradein.equipment.type.view.tree</field>
             <field name="model">gradein.equipment.type</field>
