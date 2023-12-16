@@ -64,3 +64,5 @@ docs/_build/
 *.pyc
 *.pyc
 models/__pycache__/__init__.cpython-37.pyc
+models/__pycache__/gradein_equipment_type.cpython-37.pyc
+models/__pycache__/gradein_equipment_type.cpython-37.pyc

@@ -35,14 +35,14 @@
             <field name="model">gradein.order</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="name" string="Nombre"/>
-                    <field name="date" string="Fecha"/>
-                    <field name="state" string="Estado"/>
-                    <field name="equipment_id" string="Equipo"/>
+                    <field name="name" string="Name"/>
+                    <field name="date" string="Date"/>
+                    <field name="state" string="State"/>
+                    <field name="equipment_id" string="Equipment ID"/>
                     <field name="imei" string="IMEI"/>
-                    <field name="partner_id" string="Cliente"/>
-                    <field name="reject_motive_id" string="Motivo de rechazo"/>
-                    <field name="price" string="Importe a pagar"/>
+                    <field name="partner_id" string="Client"/>
+                    <field name="reject_motive_id" string="Reason for Reject"/>
+                    <field name="price" string="Price"/>
                 </tree>
             </field>
         </record>
@@ -74,11 +74,6 @@
             <field name="view_id" ref="view_gradein_order_tree"/>
         </record>
 
-        <!-- Elemento de menú (Menu item) -->
-        <menuitem id="menu_action_gradein_order"
-                  name="Order GradeIn"
-                  parent="menu_services"
-                  action="action_gradein_order"/>
 
     </data>
 </odoo>
