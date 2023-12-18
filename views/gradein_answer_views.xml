@@ -41,8 +41,8 @@
             <field name="model">gradein.answer</field>
             <field name="arch" type="xml">
                 <search>
-                    <field name="name" string="Nombre" filter_domain="[('name', 'ilike', self)]"/>
-                    <filter string="Archivadas" name="active_filter" domain="[('active', '=', False)]"/>
+                    <field name="name" string="Name" filter_domain="[('name', 'ilike', self)]"/>
+                    <filter string="Archived" name="active_filter" domain="[('active', '=', False)]"/>
                 </search>
             </field>
         </record>

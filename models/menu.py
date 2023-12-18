@@ -9,15 +9,16 @@
 from odoo import models, api
 class GrupoServicios(models.Model):
     _name = 'grupo.servicios'
-    _description = 'Grupo de Usuarios para Servicios'
-    # Definición de campos (si es necesario)
-    # ...
+    _description = 'Group services'
+    
+
+
     @api.model
     def _create_group(self):
-        """Método para crear el grupo de usuarios"""
+        
         group = self.env['res.groups'].create({
-            'name': 'Grupo de Servicios',
+            'name': 'Group Services',
             'implied_ids': [(6, 0, [self.env.ref('base.group_user').id])],
-            # Aquí puedes agregar más permisos según sea necesario
+             
         })
         return group

@@ -1,0 +1,376 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* Squad3-odoo_gradein
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0-20231214\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-18 14:45+0000\n"
+"PO-Revision-Date: 2023-12-18 14:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_answer__active
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment__active
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment_type__active
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_question__active
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_reject_motive__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: Squad3-odoo_gradein
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_form
+msgid "Amount to Pay"
+msgstr "Monto a pagar"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.actions.act_window,name:Squad3-odoo_gradein.action_gradein_answers
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_order__answer_ids
+#: model:ir.ui.menu,name:Squad3-odoo_gradein.menu_action_gradein_answers
+msgid "Answer"
+msgstr "Respuesta"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_question__answer_ids
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_form
+msgid "Answers"
+msgstr "Respuestas"
+
+#. module: Squad3-odoo_gradein
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_answer_search
+msgid "Archived"
+msgstr Archivadas""
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_order__partner_id
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_form
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_tree
+msgid "Client"
+msgstr "Cliente"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.ui.menu,name:Squad3-odoo_gradein.menu_services_config
+msgid "Configuration"
+msgstr "Configuracion"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields.selection,name:Squad3-odoo_gradein.selection__gradein_order__state__confirmed
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_answer__create_uid
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment__create_uid
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment_type__create_uid
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_order__create_uid
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_question__create_uid
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_reject_motive__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_answer__create_date
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment__create_date
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment_type__create_date
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_order__create_date
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_question__create_date
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_reject_motive__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_order__date
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.gradein_order_report
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_form
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_search
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_tree
+msgid "Date"
+msgstr "Fecha"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment__description
+msgid "Description"
+msgstr "Descricion"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_answer__display_name
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment__display_name
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment_type__display_name
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_order__display_name
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_question__display_name
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_reject_motive__display_name
+msgid "Display Name"
+msgstr "Nombre visible "
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields.selection,name:Squad3-odoo_gradein.selection__gradein_order__state__draft
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_search
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.actions.act_window,name:Squad3-odoo_gradein.action_gradein_equipment
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_order__equipment_id
+#: model:ir.ui.menu,name:Squad3-odoo_gradein.menu_action_gradein_equipment
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_form
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_search
+msgid "Equipment"
+msgstr "Equipo"
+
+#. module: Squad3-odoo_gradein
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_tree
+msgid "Equipment ID"
+msgstr "Identificador de equipo"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.actions.act_window,name:Squad3-odoo_gradein.action_gradein_equipments_type
+msgid "Equipment Type"
+msgstr "Tipo de equipo"
+
+#. module: Squad3-odoo_gradein
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.gradein_order_report
+msgid "Equipment id"
+msgstr "Identificador de equipo"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.ui.menu,name:Squad3-odoo_gradein.menu_action_gradein_equipment_type
+msgid "Equipment type"
+msgstr "Tipo de equipo"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model,name:Squad3-odoo_gradein.model_gradein_answer
+msgid "GradeIn Answer"
+msgstr "Repsuestas de GrandeIn"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model,name:Squad3-odoo_gradein.model_gradein_equipment
+msgid "GradeIn Equipment"
+msgstr "Respuesta de GradeIn"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model,name:Squad3-odoo_gradein.model_gradein_equipment_type
+msgid "GradeIn Equipment Type"
+msgstr "Tipo de equipode GradeIn"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model,name:Squad3-odoo_gradein.model_gradein_question
+msgid "Gradein Model"
+msgstr "Modelo GradeIn"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.actions.report,name:Squad3-odoo_gradein.action_gradein_order_report
+#: model:ir.model,name:Squad3-odoo_gradein.model_gradein_order
+msgid "Gradein Order"
+msgstr "Orden GradeIn"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model,name:Squad3-odoo_gradein.model_report_gradein_order_gradein_order_report
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.gradein_order_report
+msgid "Gradein Order Report"
+msgstr "Reporte de orden GradeIn"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.actions.act_window,name:Squad3-odoo_gradein.action_gradein_questions
+msgid "Gradein Questions"
+msgstr "Preguntas GradeIn"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model,name:Squad3-odoo_gradein.model_gradein_reject_motive
+msgid "Gradein Reject Motive"
+msgstr "Motivo de Rechazo GradeIn"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_answer__id
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment__id
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment_type__id
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_order__id
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_question__id
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_reject_motive__id
+msgid "ID"
+msgstr "ID"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_order__imei
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_form
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_search
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_tree
+msgid "IMEI"
+msgstr "IMEI"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment__image
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment_type__image
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_order__image_ids
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.gradein_order_report
+msgid "Image"
+msgstr "Imagen"
+
+#. module: Squad3-odoo_gradein
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_form
+msgid "Images"
+msgstr "Imagenes"
+
+#. module: Squad3-odoo_gradein
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.gradein_order_report
+msgid "Imei"
+msgstr "IMEI"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_answer____last_update
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment____last_update
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment_type____last_update
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_order____last_update
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_question____last_update
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_reject_motive____last_update
+msgid "Last Modified on"
+msgstr "Ultima modificacion en"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_answer__write_uid
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment__write_uid
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment_type__write_uid
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_order__write_uid
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_question__write_uid
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_reject_motive__write_uid
+msgid "Last Updated by"
+msgstr "Utima actiualizacion por"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_answer__write_date
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment__write_date
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment_type__write_date
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_order__write_date
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_question__write_date
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_reject_motive__write_date
+msgid "Last Updated on"
+msgstr "Ultima modificacion en"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_answer__name
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment__name
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment_type__name
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_order__name
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_question__name
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_reject_motive__name
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.gradein_order_report
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_answer_search
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_form
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_search
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_tree
+msgid "Name"
+msgstr "Nombre"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.actions.act_window,name:Squad3-odoo_gradein.action_gradein_order
+#: model:ir.ui.menu,name:Squad3-odoo_gradein.menu_action_gradein_order
+msgid "Order GradeIn"
+msgstr "Order GradeIn"
+
+#. module: Squad3-odoo_gradein
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.gradein_order_report
+msgid "Partnet id"
+msgstr "Identificador de cliente"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment__price
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_order__price
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.gradein_order_report
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_tree
+msgid "Price"
+msgstr "Precio"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_answer__price_reduction
+msgid "Price reduction"
+msgstr "Reduccion de precio"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_order__question_id
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_form
+msgid "Question"
+msgstr "Pregunta"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_equipment_type__question_ids
+#: model:ir.ui.menu,name:Squad3-odoo_gradein.menu_action_gradein_questions
+msgid "Questions"
+msgstr "Pregunta"
+
+#. module: Squad3-odoo_gradein
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_tree
+msgid "Reason for Reject"
+msgstr "Razon de rechazo"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_order__reject_motive_id
+#: model:ir.ui.menu,name:Squad3-odoo_gradein.menu_action_gradein_reject_motive
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_form
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_search
+msgid "Reject Motive"
+msgstr "Motivo de rechazo"
+
+#. module: Squad3-odoo_gradein
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.gradein_order_report
+msgid "Reject motive"
+msgstr "Motivo de rechazo"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields.selection,name:Squad3-odoo_gradein.selection__gradein_order__state__rejected
+msgid "Rejected"
+msgstr "Rechazar"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.actions.act_window,name:Squad3-odoo_gradein.action_gradein_reject_motive
+msgid "Rejection"
+msgstr "Rechazado"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_order__review
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.gradein_order_report
+msgid "Review"
+msgstr "Reseña"
+
+#. module: Squad3-odoo_gradein
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_form
+msgid "Review Summary"
+msgstr "Resumen de la revision"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.ui.menu,name:Squad3-odoo_gradein.menu_services
+msgid "Services"
+msgstr "Servicios"
+
+#. module: Squad3-odoo_gradein
+#: model:res.groups,name:Squad3-odoo_gradein.group_services_manager
+msgid "Services Manager"
+msgstr "Gerente de servicios"
+
+#. module: Squad3-odoo_gradein
+#: model:res.groups,name:Squad3-odoo_gradein.group_services_seller
+msgid "Services Seller"
+msgstr "Vendedor de serviciso"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_order__state
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_form
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_order_tree
+msgid "State"
+msgstr "Estado"
+
+#. module: Squad3-odoo_gradein
+#: model:ir.model.fields,field_description:Squad3-odoo_gradein.field_gradein_question__equipment_type_ids
+msgid "Type Equipment"
+msgstr "Tipo de equipo"
+
+#. module: Squad3-odoo_gradein
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_equipment_search
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_equipment_type_search
+#: model_terms:ir.ui.view,arch_db:Squad3-odoo_gradein.view_gradein_question_search
+msgid "archived"
+msgstr "Archivado"
