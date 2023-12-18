@@ -20,22 +20,67 @@
                                     <th class="text-left">Imei</th>
                                     <th class="text-left">Image</th>
                                     <th class="text-left">Partnet id</th>
-                                    <th class="text-left">Reject motive</th>
+                                    <t t-if="o.reject_motive_id">
+                                        <th class="text-left">Reject motive</th>
+                                    </t>
                                     <th class="text-left">Price</th>
                                     <th class="text-left">Review</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="text-left"><t t-esc="o.name"/></td>
-                                    <td class="text-left"><t t-esc="o.date"/></td>
-                                    <td class="text-left"><t t-esc="o.equipment_id"/></td>
-                                    <td class="text-left"><t t-esc="o.imei"/></td>
-                                    <td class="text-left"><t t-esc="o.image_ids"/></td>
-                                    <td class="text-left"><t t-esc="o.partner_id"/></td>
-                                    <td class="text-left"><t t-esc="o.reject_motive_id"/></td>
-                                    <td class="text-left"><t t-esc="o.price"/></td>
-                                    <td class="text-left"><t t-esc="o.review"/></td>
+                                    <t t-if="o.name">
+                                        <td class="text-left"><t t-esc="o.name"/></td>
+                                    </t>
+                                    <t t-if="not o.name">
+                                        <td class="text-left"> -----</td>
+                                    </t>
+                                    <t t-if="o.date">
+                                        <td class="text-left"><t t-esc="o.date"/></td>
+                                    </t>
+                                    <t t-if="not o.date">
+                                        <td class="text-left"> -----</td>
+                                    </t>
+                                    <t t-if="o.equipment_id">
+                                        <td class="text-left"><t t-esc="o.equipment_id.name"/></td>
+                                    </t>
+                                    <t t-if="not o.equipment_id">
+                                        <td class="text-left"> -----</td>
+                                    </t>
+                                    <t t-if="o.imei"> 
+                                        <td class="text-left"><t t-esc="o.imei"/></td>
+                                    </t>
+                                    <t t-if="not o.imei">
+                                        <td class="text-left"> -----</td>
+                                    </t> 
+                                    <t t-if="o.image_ids">
+                                        <td class="text-left"><t t-esc="o.image_ids"/></td>
+                                    </t>
+                                    <t t-if="not o.image_ids">    
+                                        <td class="text-left"> -----</td>
+                                    </t>
+                                    <t t-if="o.partner_id">
+                                        <td class="text-left"><t t-esc="o.partner_id.name"/></td>
+                                    </t>
+                                    <t t-if="not o.partner_id">
+                                        <td class="text-left"> -----</td>
+                                    </t>
+                                    <t t-if="o.reject_motive_id">
+                                        <td class="text-left"><t t-esc="o.reject_motive_id"/></td>
+                                    </t>
+
+                                    <t t-if="o.price">
+                                        <td class="text-left"><t t-esc="o.price"/></td>
+                                    </t>
+                                    <t t-if="not o.price">
+                                        <td class="text-left"> -----</td>
+                                    </t>
+                                    <t t-if="o.review">
+                                        <td class="text-left"><t t-esc="o.review"/></td>
+                                    </t>
+                                    <t t-if="not o.review">
+                                        <td class="text-left"> -----</td>
+                                    </t>
                                 </tr>
                             </tbody>
                         </table>
